@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<hr />
+<div class="row">
+    <div class="col-md-3">
+        @Html.ActionLink("EtgMonthlyListReportTable", "EtgMonthlyListReportTable", "Export", new { @class = "btn btn-primary form-control" })
+    </div>
+    <div class="col-md-3">
+        @Html.ActionLink("EtgMonthlyListReportNote", "EtgMonthlyListReportNote", "Export", new { @class = "btn btn-danger form-control" })
+    </div>
+    <div class="col-md-3">
+        @Html.ActionLink("EtgMonthlyListReportNotesReference", "EtgMonthlyListReportNotesReference", "Export", new { @class = "btn btn-warning form-control" })
+    </div>
+    <div class="col-md-3">
+        @Html.ActionLink("EtgMonthlyListReportLine", "EtgMonthlyListReportLine", "Export", new { @class = "btn btn-info form-control" })
+    </div>
+</div>
+<br />
+<div class="row">
+
+    <div class="col-md-3">
+        @Html.ActionLink("ProjPeriodLine", "ProjPeriodLine", "Export", new { @class = "btn btn-default form-control" })
+    </div>
+
+
+    @*<div class="col-md-12">
+            @Html.ActionLink("ExportWord", "ExportWord", "Export", new { @class = "btn btn-info form-control" })
+        </div>*@
+</div>

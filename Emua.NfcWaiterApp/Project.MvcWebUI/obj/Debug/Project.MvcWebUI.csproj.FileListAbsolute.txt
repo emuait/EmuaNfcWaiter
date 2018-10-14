@@ -1,0 +1,258 @@
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\ApplicationInsights.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\csc.exe
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\csc.exe.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\csc.rsp
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\csi.exe
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\csi.rsp
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\System.AppContext.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\System.Collections.Immutable.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\System.IO.FileSystem.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\vbc.exe
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\vbc.exe.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\vbc.rsp
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\VBCSCompiler.exe
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\roslyn\VBCSCompiler.exe.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.MvcWebUI.dll.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.MvcWebUI.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.MvcWebUI.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Antlr3.Runtime.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.DependencyCollector.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.Web.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.WindowsServer.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.ApplicationInsights.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.Web.Infrastructure.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Newtonsoft.Json.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Helpers.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Mvc.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Optimization.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Razor.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.WebPages.Deployment.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.WebPages.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.WebPages.Razor.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\WebGrease.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Helpers.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Mvc.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Optimization.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.Razor.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.WebPages.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.WebPages.Deployment.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\System.Web.WebPages.Razor.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Antlr3.Runtime.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Newtonsoft.Json.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.ApplicationInsights.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.DependencyCollector.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.WindowsServer.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Microsoft.AI.Web.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.csprojResolveAssemblyReference.cache
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\EntityFramework.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\EntityFramework.SqlServer.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Ninject.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Business.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Core.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Entities.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.DataAccess.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Business.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Business.dll.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Core.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Core.dll.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Entities.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.Entities.dll.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\EntityFramework.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\EntityFramework.SqlServer.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Ninject.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.DataAccess.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.MvcWebUI\bin\Project.DataAccess.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\ApplicationInsights.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\csc.exe
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\csc.exe.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\csc.rsp
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\csi.exe
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\csi.rsp
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\System.AppContext.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\vbc.exe
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\vbc.exe.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\vbc.rsp
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.MvcWebUI.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.MvcWebUI.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.MvcWebUI.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Antlr3.Runtime.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\EntityFramework.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.Web.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Newtonsoft.Json.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Ninject.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Business.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Core.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Entities.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Helpers.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Mvc.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Optimization.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Razor.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.WebPages.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\WebGrease.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.DataAccess.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Business.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Business.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Core.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Core.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Entities.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.Entities.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\EntityFramework.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Ninject.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Helpers.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Mvc.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Optimization.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.Razor.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.WebPages.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Antlr3.Runtime.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Newtonsoft.Json.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Microsoft.AI.Web.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.DataAccess.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\bin\Project.DataAccess.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.csprojResolveAssemblyReference.cache
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.csproj.CoreCompileInputs.cache
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.csprojAssemblyReference.cache
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.csproj.CoreCompileInputs.cache
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\ApplicationInsights.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\csc.exe
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\csc.exe.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\csc.rsp
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\csi.exe
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\csi.rsp
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\System.AppContext.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\System.IO.FileSystem.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\vbc.exe
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\vbc.exe.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\vbc.rsp
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\VBCSCompiler.exe
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.MvcWebUI.dll.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.MvcWebUI.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.MvcWebUI.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Antlr3.Runtime.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\EntityFramework.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\EntityFramework.SqlServer.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.DependencyCollector.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.Web.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.WindowsServer.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.ApplicationInsights.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Newtonsoft.Json.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Ninject.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Business.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Core.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Entities.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Helpers.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Mvc.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Optimization.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Razor.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.WebPages.Deployment.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.WebPages.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.WebPages.Razor.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\WebGrease.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.DataAccess.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Business.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Business.dll.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Core.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Core.dll.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Entities.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.Entities.dll.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\EntityFramework.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\EntityFramework.SqlServer.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Ninject.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Helpers.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Mvc.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Optimization.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.Razor.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.WebPages.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.WebPages.Deployment.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\System.Web.WebPages.Razor.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Antlr3.Runtime.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Newtonsoft.Json.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.ApplicationInsights.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.DependencyCollector.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.WindowsServer.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Microsoft.AI.Web.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.DataAccess.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\bin\Project.DataAccess.dll.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.MvcWebUI\obj\Debug\Project.MvcWebUI.csproj.CopyComplete

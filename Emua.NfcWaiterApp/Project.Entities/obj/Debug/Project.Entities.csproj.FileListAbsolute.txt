@@ -1,0 +1,73 @@
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Project.Entities.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Project.Entities.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\obj\Debug\Project.Entities.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\obj\Debug\Project.Entities.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Project.Entities.dll.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\EntityFramework.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Project.Core.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.Mvc.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Ninject.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.Razor.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.WebPages.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Project.Core.pdb
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Project.Core.dll.config
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\EntityFramework.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.Mvc.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Ninject.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.Razor.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.WebPages.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\AVNI_CALISMALAR\UYGULAMALAR\PROJE ŞABLONU\AylikListeRaporlamaProjesi\Project.Entities\obj\Debug\Project.Entities.csprojResolveAssemblyReference.cache
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Project.Entities.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Project.Entities.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Project.Entities.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\EntityFramework.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Project.Core.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.Mvc.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Ninject.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.Razor.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.WebPages.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Project.Core.pdb
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Project.Core.dll.config
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\EntityFramework.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.Mvc.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Ninject.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.Razor.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.WebPages.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\obj\Debug\Project.Entities.csprojResolveAssemblyReference.cache
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\obj\Debug\Project.Entities.csproj.CoreCompileInputs.cache
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\obj\Debug\Project.Entities.dll
+C:\Users\avni.babaoglu\Desktop\ProjeSablonu\Project.Entities\obj\Debug\Project.Entities.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Entities.dll.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Entities.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Entities.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Core.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\System.Web.Mvc.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Ninject.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Core.pdb
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Core.dll.config
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Ninject.xml
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.csprojAssemblyReference.cache
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.csproj.CoreCompileInputs.cache
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.csproj.CopyComplete
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.dll
+E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.pdb

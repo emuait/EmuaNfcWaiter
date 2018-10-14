@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{926D942A-A16F-4B3F-B240-85F12A335BDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project.Entities</RootNamespace>
+    <AssemblyName>Project.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concrete\EmuaNfcModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmuaNfcModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\EmuaNfcModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\EmuaNfcModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\EtgMonthlyListReportLine.cs" />
+    <Compile Include="Concrete\Mappings\MonthlyListReportLineMap.cs" />
+    <Compile Include="Concrete\NfcCompany.cs">
+      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NfcCompanyDeskAlarm.cs">
+      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NfcDesk.cs">
+      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NfcDeskCategory.cs">
+      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NfcMenu.cs">
+      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\NfcTag.cs">
+      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Concrete\EmuaNfcModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmuaNfcModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Concrete\EmuaNfcModel.edmx.diagram">
+      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ComplexTypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Core\Project.Core.csproj">
+      <Project>{9CB3FC2D-56E7-4DC4-A2EE-7E788F57CAEB}</Project>
+      <Name>Project.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Concrete\EmuaNfcModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
+      <LastGenOutput>EmuaNfcModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Concrete\EmuaNfcModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
+      <LastGenOutput>EmuaNfcModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="939a8620ecd84a748daa429865ef95c9" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="EmuaNfcModel.NfcCompany" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmuaNfcModel.NfcCompanyDeskAlarm" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmuaNfcModel.NfcDesk" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmuaNfcModel.NfcDeskCategory" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmuaNfcModel.NfcMenu" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmuaNfcModel.NfcTag" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcCompanyDeskAlarm_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcDesk_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcDeskCategory_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcMenu_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcTag_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcCompanyDeskAlarm_NfcDesk" ManuallyRouted="false" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcDesk_NfcDeskCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="EmuaNfcModel.FK_NfcDesk_NfcTag" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

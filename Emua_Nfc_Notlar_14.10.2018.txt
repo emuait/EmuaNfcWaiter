@@ -1,0 +1,20 @@
+- şirket yönetim ekranı
+- masa kategori yönetim ekranı
+- masa yönetim ekranı
+- etiket yönetim ekranı
+- aktif olan alarm yönetim sayfası
+- etiket yönetim ekranı
+- menü yönetim ekranı (üst menü, yan menü, alt menü)
+
+- o - o - o - o - o - o - o -	
+1) tüm masaların gösterimi için; şirket id'ye bağlı masa listesi,(şirket id input)
+2) a- masa istek (etiket url) formatı belirlenecek. Alarm tetikleme buna göre yapılacak.(AlarmTypeName, şirket id ve masa numarası input değeridir.)
+   b- istek geldiği an alarm oluşturma işlemi:
+	  * eğer ilgili alarm isteği, 
+		daha önce oluşturulmuş ve kapatılmamış ise "mevcut alarm aktiftir" uyarısı ile 0 ve AlarmTypeName değeri, 
+		yeni alarm isteği gelmiş ise 1 ve AlarmTypeName değeri,
+		hatalı bir durum mevcut ise -1 ve AlarmTypeName değeri dönmelidir.
+
+3) masa çağırma ve hesap isteme istekleri Signal R vb. bir yönetm ile server post isteği olmaksızın güncel durumların görüntülenmesi sağlanacaktır.
+4) ilgili garsıon uyarıyı kapatmak istediğinde, bir servis ile şirket id, masa id ve alarm type ile ilgili alarmın silinmesi sağlanır. 
+	

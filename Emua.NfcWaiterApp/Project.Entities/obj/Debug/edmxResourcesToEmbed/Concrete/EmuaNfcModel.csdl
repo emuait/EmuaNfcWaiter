@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmuaNfcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NfcCompany">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LogoUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WebSiteUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Adress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="NfcCompanyDeskAlarm" Relationship="Self.FK_NfcCompanyDeskAlarm_NfcCompany" FromRole="NfcCompany" ToRole="NfcCompanyDeskAlarm" />
+    <NavigationProperty Name="NfcDesk" Relationship="Self.FK_NfcDesk_NfcCompany" FromRole="NfcCompany" ToRole="NfcDesk" />
+    <NavigationProperty Name="NfcDeskCategory" Relationship="Self.FK_NfcDeskCategory_NfcCompany" FromRole="NfcCompany" ToRole="NfcDeskCategory" />
+    <NavigationProperty Name="NfcMenu" Relationship="Self.FK_NfcMenu_NfcCompany" FromRole="NfcCompany" ToRole="NfcMenu" />
+    <NavigationProperty Name="NfcTag" Relationship="Self.FK_NfcTag_NfcCompany" FromRole="NfcCompany" ToRole="NfcTag" />
+  </EntityType>
+  <EntityType Name="NfcCompanyDeskAlarm">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlarmTypeName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeskId" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NfcCompany" Relationship="Self.FK_NfcCompanyDeskAlarm_NfcCompany" FromRole="NfcCompanyDeskAlarm" ToRole="NfcCompany" />
+    <NavigationProperty Name="NfcDesk" Relationship="Self.FK_NfcCompanyDeskAlarm_NfcDesk" FromRole="NfcCompanyDeskAlarm" ToRole="NfcDesk" />
+  </EntityType>
+  <EntityType Name="NfcDesk">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeskCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NfcCompany" Relationship="Self.FK_NfcDesk_NfcCompany" FromRole="NfcDesk" ToRole="NfcCompany" />
+    <NavigationProperty Name="NfcCompanyDeskAlarm" Relationship="Self.FK_NfcCompanyDeskAlarm_NfcDesk" FromRole="NfcDesk" ToRole="NfcCompanyDeskAlarm" />
+    <NavigationProperty Name="NfcDeskCategory" Relationship="Self.FK_NfcDesk_NfcDeskCategory" FromRole="NfcDesk" ToRole="NfcDeskCategory" />
+    <NavigationProperty Name="NfcTag" Relationship="Self.FK_NfcDesk_NfcTag" FromRole="NfcDesk" ToRole="NfcTag" />
+  </EntityType>
+  <EntityType Name="NfcDeskCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrderNumber" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NfcCompany" Relationship="Self.FK_NfcDeskCategory_NfcCompany" FromRole="NfcDeskCategory" ToRole="NfcCompany" />
+    <NavigationProperty Name="NfcDesk" Relationship="Self.FK_NfcDesk_NfcDeskCategory" FromRole="NfcDeskCategory" ToRole="NfcDesk" />
+  </EntityType>
+  <EntityType Name="NfcMenu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OrderNumber" Type="Int32" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsAdmin" Type="Boolean" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NfcCompany" Relationship="Self.FK_NfcMenu_NfcCompany" FromRole="NfcMenu" ToRole="NfcCompany" />
+  </EntityType>
+  <EntityType Name="NfcTag">
+    <Key>
+      <PropertyRef Name="DeskId" />
+    </Key>
+    <Property Name="DeskId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NfcCompany" Relationship="Self.FK_NfcTag_NfcCompany" FromRole="NfcTag" ToRole="NfcCompany" />
+    <NavigationProperty Name="NfcDesk" Relationship="Self.FK_NfcDesk_NfcTag" FromRole="NfcTag" ToRole="NfcDesk" />
+  </EntityType>
+  <Association Name="FK_NfcCompanyDeskAlarm_NfcCompany">
+    <End Role="NfcCompany" Type="Self.NfcCompany" Multiplicity="1" />
+    <End Role="NfcCompanyDeskAlarm" Type="Self.NfcCompanyDeskAlarm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NfcCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NfcCompanyDeskAlarm">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NfcDesk_NfcCompany">
+    <End Role="NfcCompany" Type="Self.NfcCompany" Multiplicity="1" />
+    <End Role="NfcDesk" Type="Self.NfcDesk" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NfcCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NfcDesk">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NfcDeskCategory_NfcCompany">
+    <End Role="NfcCompany" Type="Self.NfcCompany" Multiplicity="1" />
+    <End Role="NfcDeskCategory" Type="Self.NfcDeskCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NfcCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NfcDeskCategory">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NfcMenu_NfcCompany">
+    <End Role="NfcCompany" Type="Self.NfcCompany" Multiplicity="1" />
+    <End Role="NfcMenu" Type="Self.NfcMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NfcCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NfcMenu">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NfcTag_NfcCompany">
+    <End Role="NfcCompany" Type="Self.NfcCompany" Multiplicity="1" />
+    <End Role="NfcTag" Type="Self.NfcTag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NfcCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NfcTag">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NfcCompanyDeskAlarm_NfcDesk">
+    <End Role="NfcDesk" Type="Self.NfcDesk" Multiplicity="1" />
+    <End Role="NfcCompanyDeskAlarm" Type="Self.NfcCompanyDeskAlarm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NfcDesk">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NfcCompanyDeskAlarm">
+        <PropertyRef Name="DeskId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NfcDesk_NfcDeskCategory">
+    <End Role="NfcDeskCategory" Type="Self.NfcDeskCategory" Multiplicity="1" />
+    <End Role="NfcDesk" Type="Self.NfcDesk" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NfcDeskCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NfcDesk">
+        <PropertyRef Name="DeskCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NfcDesk_NfcTag">
+    <End Role="NfcTag" Type="Self.NfcTag" Multiplicity="1" />
+    <End Role="NfcDesk" Type="Self.NfcDesk" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="NfcTag">
+        <PropertyRef Name="DeskId" />
+      </Principal>
+      <Dependent Role="NfcDesk">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmuaNfcContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NfcCompany" EntityType="Self.NfcCompany" />
+    <EntitySet Name="NfcCompanyDeskAlarm" EntityType="Self.NfcCompanyDeskAlarm" />
+    <EntitySet Name="NfcDesk" EntityType="Self.NfcDesk" />
+    <EntitySet Name="NfcDeskCategory" EntityType="Self.NfcDeskCategory" />
+    <EntitySet Name="NfcMenu" EntityType="Self.NfcMenu" />
+    <EntitySet Name="NfcTag" EntityType="Self.NfcTag" />
+    <AssociationSet Name="FK_NfcCompanyDeskAlarm_NfcCompany" Association="Self.FK_NfcCompanyDeskAlarm_NfcCompany">
+      <End Role="NfcCompany" EntitySet="NfcCompany" />
+      <End Role="NfcCompanyDeskAlarm" EntitySet="NfcCompanyDeskAlarm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NfcDesk_NfcCompany" Association="Self.FK_NfcDesk_NfcCompany">
+      <End Role="NfcCompany" EntitySet="NfcCompany" />
+      <End Role="NfcDesk" EntitySet="NfcDesk" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NfcDeskCategory_NfcCompany" Association="Self.FK_NfcDeskCategory_NfcCompany">
+      <End Role="NfcCompany" EntitySet="NfcCompany" />
+      <End Role="NfcDeskCategory" EntitySet="NfcDeskCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NfcMenu_NfcCompany" Association="Self.FK_NfcMenu_NfcCompany">
+      <End Role="NfcCompany" EntitySet="NfcCompany" />
+      <End Role="NfcMenu" EntitySet="NfcMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NfcTag_NfcCompany" Association="Self.FK_NfcTag_NfcCompany">
+      <End Role="NfcCompany" EntitySet="NfcCompany" />
+      <End Role="NfcTag" EntitySet="NfcTag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NfcCompanyDeskAlarm_NfcDesk" Association="Self.FK_NfcCompanyDeskAlarm_NfcDesk">
+      <End Role="NfcDesk" EntitySet="NfcDesk" />
+      <End Role="NfcCompanyDeskAlarm" EntitySet="NfcCompanyDeskAlarm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NfcDesk_NfcDeskCategory" Association="Self.FK_NfcDesk_NfcDeskCategory">
+      <End Role="NfcDeskCategory" EntitySet="NfcDeskCategory" />
+      <End Role="NfcDesk" EntitySet="NfcDesk" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NfcDesk_NfcTag" Association="Self.FK_NfcDesk_NfcTag">
+      <End Role="NfcTag" EntitySet="NfcTag" />
+      <End Role="NfcDesk" EntitySet="NfcDesk" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,197 @@
+﻿@model IEnumerable<Project.Entities.Concrete.EtgMonthlyListReportLine>
+
+@{
+    ViewBag.Title = "EtgMonthlyListReportLine";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EtgMonthlyListReportLine</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MONTLYLISTREPORTINGGROUP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LINENUM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PUBLISHERID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PUBLISHCONTENT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PUBLISHTIME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PAGEQTY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AREAPUBLISHDECLARATED)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRESSTOTALQTY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALESAVGDAILYQTY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PUBLISHYEAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PUBLISHERPERIOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BRANCHID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADVERTQUOTAGROUPID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STATEID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COUNTYID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INOUT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MONTLYLISTTABLEREFRECID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COUNTYNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCRIPTION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MODIFIEDDATETIME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MODIFIEDBY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATEDDATETIME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATEDBY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATAAREAID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RECVERSION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PARTITION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MANUALLYCREATED)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MONTLYLISTREPORTINGGROUP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LINENUM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PUBLISHERID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PUBLISHCONTENT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PUBLISHTIME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PAGEQTY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AREAPUBLISHDECLARATED)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PRESSTOTALQTY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SALESAVGDAILYQTY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PUBLISHYEAR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PUBLISHERPERIOD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BRANCHID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ADVERTQUOTAGROUPID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STATEID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COUNTYID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INOUT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MONTLYLISTTABLEREFRECID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COUNTYNAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DESCRIPTION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MODIFIEDDATETIME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MODIFIEDBY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CREATEDDATETIME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CREATEDBY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DATAAREAID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RECVERSION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PARTITION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MANUALLYCREATED)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.RECID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.RECID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.RECID })
+            </td>
+        </tr>
+    }
+
+</table>
