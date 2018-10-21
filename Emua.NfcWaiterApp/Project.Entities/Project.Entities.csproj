@@ -49,56 +49,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\EmuaNfcModel.Context.cs">
+    <Compile Include="Concrete\dbEmuaNfcModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EmuaNfcModel.Context.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\EmuaNfcModel.cs">
+    <Compile Include="Concrete\dbEmuaNfcModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\EmuaNfcModel.Designer.cs">
+    <Compile Include="Concrete\dbEmuaNfcModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\EtgMonthlyListReportLine.cs" />
-    <Compile Include="Concrete\Mappings\MonthlyListReportLineMap.cs" />
     <Compile Include="Concrete\NfcCompany.cs">
-      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Concrete\NfcCompanyDeskAlarm.cs">
-      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Concrete\NfcDesk.cs">
-      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Concrete\NfcDeskCategory.cs">
-      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Concrete\NfcMenu.cs">
-      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Concrete\NfcTag.cs">
-      <DependentUpon>EmuaNfcModel.tt</DependentUpon>
+      <DependentUpon>dbEmuaNfcModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Concrete\EmuaNfcModel.edmx">
+    <EntityDeploy Include="Concrete\dbEmuaNfcModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EmuaNfcModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>dbEmuaNfcModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Concrete\EmuaNfcModel.edmx.diagram">
-      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
+    <None Include="Concrete\dbEmuaNfcModel.edmx.diagram">
+      <DependentUpon>dbEmuaNfcModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ComplexTypes\" />
+    <Folder Include="Concrete\Mappings\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Project.Core\Project.Core.csproj">
@@ -110,15 +109,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Concrete\EmuaNfcModel.Context.tt">
+    <Content Include="Concrete\dbEmuaNfcModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
-      <LastGenOutput>EmuaNfcModel.Context.cs</LastGenOutput>
+      <DependentUpon>dbEmuaNfcModel.edmx</DependentUpon>
+      <LastGenOutput>dbEmuaNfcModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Concrete\EmuaNfcModel.tt">
+    <Content Include="Concrete\dbEmuaNfcModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmuaNfcModel.edmx</DependentUpon>
-      <LastGenOutput>EmuaNfcModel.cs</LastGenOutput>
+      <DependentUpon>dbEmuaNfcModel.edmx</DependentUpon>
+      <LastGenOutput>dbEmuaNfcModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

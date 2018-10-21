@@ -48,9 +48,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\INfcCompanyDAL.cs" />
-    <Compile Include="Abstract\IEtgMonthlyListReportLineDAL.cs" />
+    <Compile Include="Abstract\INfcCompanyDeskAlarmDAL.cs" />
+    <Compile Include="Abstract\INfcDeskCategoryDAL.cs" />
+    <Compile Include="Abstract\INfcDeskDAL.cs" />
+    <Compile Include="Abstract\INfcMenuDAL.cs" />
+    <Compile Include="Abstract\INfcTagDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\EfNfcTagDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\EfNfcMenuDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\EfNfcDeskDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\EfNfcDeskCategoryDAL.cs" />
+    <Compile Include="Concrete\EntityFramework\EfNfcCompanyDeskAlarm.cs" />
     <Compile Include="Concrete\EntityFramework\EfNfcCompanyDAL.cs" />
-    <Compile Include="Concrete\EntityFramework\EfEtgMonthlyListReportLineDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

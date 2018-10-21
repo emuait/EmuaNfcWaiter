@@ -11,38 +11,38 @@ namespace Project.Entities.Concrete
 {
 	using Project.Core.Entities;
 	using System;
-	using System.Collections.Generic;
-
-	public partial class NfcCompany : IEntity
+    using System.Collections.Generic;
+    
+    public partial class NfcCompany 
 	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-		public NfcCompany()
-		{
-			this.NfcCompanyDeskAlarm = new HashSet<NfcCompanyDeskAlarm>();
-			this.NfcDesk = new HashSet<NfcDesk>();
-			this.NfcDeskCategory = new HashSet<NfcDeskCategory>();
-			this.NfcMenu = new HashSet<NfcMenu>();
-			this.NfcTag = new HashSet<NfcTag>();
-		}
-
-		public int Id { get; set; }
-		public string Name { get; set; }
-		public string LogoUrl { get; set; }
-		public string WebSiteUrl { get; set; }
-		public string Adress { get; set; }
-		public string Mail { get; set; }
-		public string Phone { get; set; }
-		public Nullable<System.DateTime> CreatedDate { get; set; }
-
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-		public virtual ICollection<NfcCompanyDeskAlarm> NfcCompanyDeskAlarm { get; set; }
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-		public virtual ICollection<NfcDesk> NfcDesk { get; set; }
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-		public virtual ICollection<NfcDeskCategory> NfcDeskCategory { get; set; }
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-		public virtual ICollection<NfcMenu> NfcMenu { get; set; }
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-		public virtual ICollection<NfcTag> NfcTag { get; set; }
-	}
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public NfcCompany()
+        {
+            this.NfcCompanyDeskAlarm = new HashSet<NfcCompanyDeskAlarm>();
+            this.NfcDesk = new HashSet<NfcDesk>();
+            this.NfcDeskCategory = new HashSet<NfcDeskCategory>();
+            this.NfcMenu = new HashSet<NfcMenu>();
+            this.NfcTag = new HashSet<NfcTag>();
+        }
+    
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string LogoUrl { get; set; }
+        public string WebSiteUrl { get; set; }
+        public string Adress { get; set; }
+        public string Mail { get; set; }
+        public string Phone { get; set; }
+        public Nullable<System.DateTime> CreatedDate { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NfcCompanyDeskAlarm> NfcCompanyDeskAlarm { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NfcDesk> NfcDesk { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NfcDeskCategory> NfcDeskCategory { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NfcMenu> NfcMenu { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<NfcTag> NfcTag { get; set; }
+    }
 }

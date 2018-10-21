@@ -80,3 +80,24 @@ E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.D
 E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.DataAccess\obj\Debug\Project.DataAccess.pdb
 E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\EntityFramework.dll
 E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.DataAccess.dll.config
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.DataAccess.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.DataAccess.pdb
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\EntityFramework.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.Core.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.Entities.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\System.Web.Mvc.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Ninject.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.Core.pdb
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.Core.dll.config
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.Entities.pdb
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Project.Entities.dll.config
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\EntityFramework.xml
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\bin\Debug\Ninject.xml
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\obj\Debug\Project.DataAccess.csprojAssemblyReference.cache
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\obj\Debug\Project.DataAccess.csproj.CoreCompileInputs.cache
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\obj\Debug\Project.DataAccess.csproj.CopyComplete
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\obj\Debug\Project.DataAccess.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.DataAccess\obj\Debug\Project.DataAccess.pdb

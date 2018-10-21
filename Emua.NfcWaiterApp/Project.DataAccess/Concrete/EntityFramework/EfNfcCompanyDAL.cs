@@ -4,7 +4,8 @@ using Project.Entities.Concrete;
 
 namespace Project.DataAccess.Concrete.EntityFramework
 {
-	public class EfNfcCompanyDAL : EfEntityRepositoryBase<NfcCompany, EmuaNfcContext>, INfcCompanyDAL
+	public class EfNfcCompanyDAL : EfEntityRepositoryBase<NfcCompany, dbEmuaNfcContext>, INfcCompanyDAL
 	{
+		
 	}
 }

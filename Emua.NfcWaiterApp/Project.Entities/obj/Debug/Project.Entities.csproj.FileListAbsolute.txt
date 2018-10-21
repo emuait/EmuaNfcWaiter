@@ -71,3 +71,21 @@ E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.E
 E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.csproj.CopyComplete
 E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.dll
 E:\AVNI CALISMALAR\PROJELER\EMUA NFC GARSON UYGULAMA\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.pdb
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Entities.dll.config
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Entities.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Entities.pdb
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Core.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\System.Web.Mvc.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Ninject.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Core.pdb
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Project.Core.dll.config
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.xml
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\bin\Debug\Ninject.xml
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.csprojAssemblyReference.cache
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.csproj.CoreCompileInputs.cache
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.csproj.CopyComplete
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.dll
+C:\GIT\EmuaNfcWaiter\Emua.NfcWaiterApp\Project.Entities\obj\Debug\Project.Entities.pdb

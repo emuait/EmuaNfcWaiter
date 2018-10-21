@@ -50,10 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\INfcTagBOL.cs" />
+    <Compile Include="Abstract\INfcMenuBOL.cs" />
+    <Compile Include="Abstract\INfcDeskBOL.cs" />
+    <Compile Include="Abstract\INfcDeskCategoryBOL.cs" />
+    <Compile Include="Abstract\INfcCompanyDeskAlarmBOL.cs" />
     <Compile Include="Abstract\INfcCompanyBOL.cs" />
-    <Compile Include="Abstract\IEtgMonthlyListReportLineBOL.cs" />
+    <Compile Include="Concrete\NfcTagBOL.cs" />
+    <Compile Include="Concrete\NfcMenuBOL.cs" />
+    <Compile Include="Concrete\NfcDeskCategoryBOL.cs" />
+    <Compile Include="Concrete\NfcDeskBOL.cs" />
+    <Compile Include="Concrete\NfcCompanyDeskAlarmBOL.cs" />
     <Compile Include="Concrete\NfcCompanyBOL.cs" />
-    <Compile Include="Concrete\EtgMonthlyListReportLineBOL.cs" />
     <Compile Include="DependecyResolvers\Ninject\BusinessModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

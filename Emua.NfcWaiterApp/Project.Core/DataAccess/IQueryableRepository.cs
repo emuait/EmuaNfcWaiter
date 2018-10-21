@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Project.Core.DataAccess
 {
 	//IQueryableRepository Arayüzünün Yazılması
-	public interface IQueryableRepository<T> where T : class, IEntity, new()
+	public interface IQueryableRepository<T> where T : class,  new()
 	{
 		IQueryable<T> Table { get; }
 	}

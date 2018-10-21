@@ -12,15 +12,16 @@ namespace Project.Entities.Concrete
 	using Project.Core.Entities;
 	using System;
 
-	public partial class NfcTag:IEntity
-    {
-        public int DeskId { get; set; }
-        public string Name { get; set; }
-        public string Code { get; set; }
-        public Nullable<System.DateTime> CreatedDate { get; set; }
-        public int CompanyId { get; set; }
-    
-        public virtual NfcCompany NfcCompany { get; set; }
-        public virtual NfcDesk NfcDesk { get; set; }
-    }
+	public partial class NfcTag
+	{
+		public int Id { get; set; }
+		public string Name { get; set; }
+		public string Code { get; set; }
+		public Nullable<System.DateTime> CreatedDate { get; set; }
+		public int CompanyId { get; set; }
+		public int DeskId { get; set; }
+
+		public virtual NfcCompany NfcCompany { get; set; }
+		public virtual NfcDesk NfcDesk { get; set; }
+	}
 }

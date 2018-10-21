@@ -1,16 +1,12 @@
 ﻿using Project.Core.Entities;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project.Core.DataAccess.EntityFramework
 {
 	//Entity Framework İçin IQueryable İmplementasyonun Yapılması
 	public class EfQueryableRepository<T> : IQueryableRepository<T>
-		where T : class, IEntity, new()
+		where T : class,   new()
 	{
 		private DbContext _context;
 		private IDbSet<T> _entities;

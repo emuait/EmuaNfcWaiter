@@ -1,14 +1,15 @@
 ﻿using Project.Entities.Concrete;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Project.Business.Abstract
 {
-    public interface INfcCompanyBOL
+	public interface INfcCompanyBOL
 	{
-        List<NfcCompany> GetAll();
-    }
+		List<NfcCompany> GetAll();
+		NfcCompany Get(int? id);
+		NfcCompany Add(NfcCompany nfcCompany);
+		NfcCompany Update(NfcCompany nfcCompany);
+		void Delete(NfcCompany nfcCompany);
+	}
 }

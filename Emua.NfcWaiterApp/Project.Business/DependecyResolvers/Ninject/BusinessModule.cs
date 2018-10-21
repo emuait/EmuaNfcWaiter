@@ -14,13 +14,26 @@ namespace Project.Business.DependecyResolvers.Ninject
 	{
 		public override void Load()
 		{
-			Bind<IEtgMonthlyListReportLineDAL>().To<EfEtgMonthlyListReportLineDAL>();
-			Bind<IEtgMonthlyListReportLineBOL>().To<EtgMonthlyListReportLineBOL>();
 			Bind<INfcCompanyDAL>().To<EfNfcCompanyDAL>();
 			Bind<INfcCompanyBOL>().To<NfcCompanyBOL>();
 
+			Bind<INfcDeskDAL>().To<EfNfcDeskDAL>();
+			Bind<INfcDeskBOL>().To<NfcDeskBOL>();
+
+			Bind<INfcDeskCategoryDAL>().To<EfNfcDeskCategoryDAL>();
+			Bind<INfcDeskCategoryBOL>().To<NfcDeskCategoryBOL>();
+
+			Bind<INfcCompanyDeskAlarmDAL>().To<EfNfcCompanyDeskAlarmDAL>();
+			Bind<INfcCompanyDeskAlarmBOL>().To<NfcCompanyDeskAlarmBOL>();
+
+			Bind<INfcMenuDAL>().To<EfNfcMenuDAL>();
+			Bind<INfcMenuBOL>().To<NfcMenuBOL>();
+
+			Bind<INfcTagDAL>().To<EfNfcTagDAL>();
+			Bind<INfcTagBOL>().To<NfcTagBOL>();
+
 			Bind(typeof(IQueryableRepository<>)).To(typeof(EfQueryableRepository<>));
-			Bind<DbContext>().To<EmuaNfcContext>();
+			Bind<DbContext>().To<dbEmuaNfcContext>();
 		}
 	}
 }

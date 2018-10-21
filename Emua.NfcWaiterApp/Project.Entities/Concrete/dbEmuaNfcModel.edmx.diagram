@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="951baf1f8cce4ea8bde0b02f182a40ed" Name="Diagram1">
+        <EntityTypeShape EntityType="dbEmuaNfcModel.NfcCompany" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbEmuaNfcModel.NfcCompanyDeskAlarm" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbEmuaNfcModel.NfcDesk" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbEmuaNfcModel.NfcDeskCategory" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbEmuaNfcModel.NfcMenu" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbEmuaNfcModel.NfcTag" Width="1.5" PointX="7.5" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcCompanyDeskAlarm_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcDesk_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcDeskCategory_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcMenu_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcTag_NfcCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcCompanyDeskAlarm_NfcDesk" ManuallyRouted="false" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcDesk_NfcDeskCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="dbEmuaNfcModel.FK_NfcTag_NfcDesk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

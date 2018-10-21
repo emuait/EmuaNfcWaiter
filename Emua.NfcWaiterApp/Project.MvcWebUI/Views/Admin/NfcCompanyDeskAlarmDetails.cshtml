@@ -1,0 +1,51 @@
+﻿@model Project.Entities.Concrete.NfcCompanyDeskAlarm
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NfcCompanyDeskAlarm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AlarmTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlarmTypeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NfcCompany.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NfcCompany.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NfcDesk.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NfcDesk.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

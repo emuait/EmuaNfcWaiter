@@ -7,7 +7,7 @@
 - menü yönetim ekranı (üst menü, yan menü, alt menü)
 
 - o - o - o - o - o - o - o -	
-1) tüm masaların gösterimi için; şirket id'ye bağlı masa listesi,(şirket id input)
+1) tüm masaların gösterimi için; şirket id'ye bağlı masa listesi,(şirket id ve kategori id input)
 2) a- masa istek (etiket url) formatı belirlenecek. Alarm tetikleme buna göre yapılacak.(AlarmTypeName, şirket id ve masa numarası input değeridir.)
    b- istek geldiği an alarm oluşturma işlemi:
 	  * eğer ilgili alarm isteği, 

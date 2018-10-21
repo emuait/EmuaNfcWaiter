@@ -12,9 +12,10 @@ namespace Project.Entities.Concrete
 	using Project.Core.Entities;
 	using System;
 
-	public partial class NfcMenu:IEntity
-    {
-        public int Id { get; set; }
+	public partial class NfcMenu
+
+	{
+		public int Id { get; set; }
         public string Name { get; set; }
         public string ImageUrl { get; set; }
         public string Url { get; set; }
