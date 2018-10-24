@@ -8,115 +8,119 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Project.Entities.Concrete;
+using Project.Business.Abstract;
 
 namespace Project.MvcWebUI.Controllers
 {
     public class NfcCompanyController : Controller
-    {
-        private dbEmuaNfcContext db = new dbEmuaNfcContext();
+	{
+		private dbEmuaNfcContext db = new dbEmuaNfcContext();
 
-        // GET: NfcCompany
-        public async Task<ActionResult> Index()
-        {
-            return View(await db.NfcCompany.ToListAsync());
-        }
+		private INfcCompanyBOL _nfcCompanyBol;
 
-        // GET: NfcCompany/Details/5
-        public async Task<ActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            NfcCompany nfcCompany = await db.NfcCompany.FindAsync(id);
-            if (nfcCompany == null)
-            {
-                return HttpNotFound();
-            }
-            return View(nfcCompany);
-        }
+		public NfcCompanyController(INfcCompanyBOL nfcCompanyBol)
+		{
+			_nfcCompanyBol = nfcCompanyBol;
+		}
+		// GET: NfcCompany
+		public ActionResult Index()
+		{
+			return View(_nfcCompanyBol.GetAll());
+		}
 
-        // GET: NfcCompany/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
+		// GET: NfcCompany/Details/5
+		public ActionResult Details(int? id)
+		{
+			if (id == null)
+			{
+				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+			}
+			NfcCompany nfcCompany = _nfcCompanyBol.Get(id);
+			if (nfcCompany == null)
+			{
+				return HttpNotFound();
+			}
+			return View(nfcCompany);
+		}
 
-        // POST: NfcCompany/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,LogoUrl,WebSiteUrl,Adress,Mail,Phone,CreatedDate")] NfcCompany nfcCompany)
-        {
-            if (ModelState.IsValid)
-            {
-                db.NfcCompany.Add(nfcCompany);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
+		// GET: NfcCompany/Create
+		public ActionResult Create()
+		{
+			return View();
+		}
 
-            return View(nfcCompany);
-        }
+		// POST: NfcCompany/Create
+		// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+		// more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public ActionResult Create([Bind(Include = "Id,Name,LogoUrl,WebSiteUrl,Adress,Mail,Phone,CreatedDate")] NfcCompany nfcCompany)
+		{
+			if (ModelState.IsValid)
+			{
+				_nfcCompanyBol.Add(nfcCompany);
+				return RedirectToAction("Index");
+			}
 
-        // GET: NfcCompany/Edit/5
-        public async Task<ActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            NfcCompany nfcCompany = await db.NfcCompany.FindAsync(id);
-            if (nfcCompany == null)
-            {
-                return HttpNotFound();
-            }
-            return View(nfcCompany);
-        }
+			return View(nfcCompany);
+		}
 
-        // POST: NfcCompany/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,LogoUrl,WebSiteUrl,Adress,Mail,Phone,CreatedDate")] NfcCompany nfcCompany)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(nfcCompany).State = EntityState.Modified;
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
-            return View(nfcCompany);
-        }
+		// GET: NfcCompany/Edit/5
+		public ActionResult Edit(int? id)
+		{
+			if (id == null)
+			{
+				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+			}
+			NfcCompany nfcCompany = _nfcCompanyBol.Get(id);
+			if (nfcCompany == null)
+			{
+				return HttpNotFound();
+			}
+			return View(nfcCompany);
+		}
 
-        // GET: NfcCompany/Delete/5
-        public async Task<ActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            NfcCompany nfcCompany = await db.NfcCompany.FindAsync(id);
-            if (nfcCompany == null)
-            {
-                return HttpNotFound();
-            }
-            return View(nfcCompany);
-        }
+		// POST: NfcCompany/Edit/5
+		// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+		// more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public ActionResult Edit([Bind(Include = "Id,Name,LogoUrl,WebSiteUrl,Adress,Mail,Phone,CreatedDate")] NfcCompany nfcCompany)
+		{
+			if (ModelState.IsValid)
+			{
+				_nfcCompanyBol.Update(nfcCompany);
+				return RedirectToAction("Index");
+			}
+			return View(nfcCompany);
+		}
 
-        // POST: NfcCompany/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(int id)
-        {
-            NfcCompany nfcCompany = await db.NfcCompany.FindAsync(id);
-            db.NfcCompany.Remove(nfcCompany);
-            await db.SaveChangesAsync();
-            return RedirectToAction("Index");
-        }
+		// GET: NfcCompany/Delete/5
+		public ActionResult Delete(int? id)
+		{
+			if (id == null)
+			{
+				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+			}
+			NfcCompany nfcCompany = _nfcCompanyBol.Get(id);
+			if (nfcCompany == null)
+			{
+				return HttpNotFound();
+			}
+			return View(nfcCompany);
+		}
 
-        protected override void Dispose(bool disposing)
+		// POST: NfcCompany/Delete/5
+		[HttpPost, ActionName("Delete")]
+		[ValidateAntiForgeryToken]
+		public ActionResult DeleteConfirmed(int id)
+		{
+			NfcCompany nfcCompany = _nfcCompanyBol.Get(id);
+			_nfcCompanyBol.Delete(nfcCompany);
+			return RedirectToAction("Index");
+		}
+
+		protected override void Dispose(bool disposing)
         {
             if (disposing)
             {

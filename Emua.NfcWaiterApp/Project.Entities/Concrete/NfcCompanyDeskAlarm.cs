@@ -9,12 +9,11 @@
 
 namespace Project.Entities.Concrete
 {
-	using Project.Core.Entities;
-	using System;
+    using System;
     using System.Collections.Generic;
     
-    public partial class NfcCompanyDeskAlarm 
-	{
+    public partial class NfcCompanyDeskAlarm
+    {
         public int Id { get; set; }
         public string AlarmTypeName { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }

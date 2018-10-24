@@ -7,6 +7,11 @@ namespace Project.Business.Concrete
 {
 	public class NfcDeskBOL : INfcDeskBOL
 	{
+		private INfcDeskDAL _nfcDeskDal;
+		public NfcDeskBOL(INfcDeskDAL nfcDeskDal)
+		{
+			_nfcDeskDal = nfcDeskDal;
+		}
 		public NfcDesk Add(NfcDesk entity)
 		{
 			throw new System.NotImplementedException();
@@ -24,7 +29,7 @@ namespace Project.Business.Concrete
 
 		public List<NfcDesk> GetAll()
 		{
-			throw new System.NotImplementedException();
+			return _nfcDeskDal.GetList();
 		}
 
 		public NfcDesk Update(NfcDesk entity)

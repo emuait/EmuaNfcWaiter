@@ -92,7 +92,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcCompany nfcCompany = db.NfcCompany.Find(id);
+			NfcCompany nfcCompany = _nfcCompanyBol.Get(id);
 			if (nfcCompany == null)
 			{
 				return HttpNotFound();
@@ -109,8 +109,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.Entry(nfcCompany).State = EntityState.Modified;
-				db.SaveChanges();
+				_nfcCompanyBol.Update(nfcCompany);
 				return RedirectToAction("Index");
 			}
 			return View(nfcCompany);
@@ -123,7 +122,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcCompany nfcCompany = db.NfcCompany.Find(id);
+			NfcCompany nfcCompany = _nfcCompanyBol.Get(id);
 			if (nfcCompany == null)
 			{
 				return HttpNotFound();
@@ -136,9 +135,8 @@ namespace Project.MvcWebUI.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult NfcCompanyDeleteConfirmed(int id)
 		{
-			NfcCompany nfcCompany = db.NfcCompany.Find(id);
-			db.NfcCompany.Remove(nfcCompany);
-			db.SaveChanges();
+			NfcCompany nfcCompany = _nfcCompanyBol.Get(id);
+			_nfcCompanyBol.Delete(nfcCompany);
 			return RedirectToAction("Index");
 		}
 		#endregion ŞİRKET(NFCCOMPANY) İŞLEMLERİ
@@ -146,7 +144,7 @@ namespace Project.MvcWebUI.Controllers
 		#region MASA ALARMI (NFCCOMPANYDESKALARM) İŞLEMLERİ
 		public ActionResult NfcCompanyDeskAlarmIndex()
 		{
-			var nfcCompanyDeskAlarm = db.NfcCompanyDeskAlarm.Include(n => n.NfcCompany).Include(n => n.NfcDesk);
+			var nfcCompanyDeskAlarm = _nfcCompanyDeskAlarmBol.GetAll();
 			return View(nfcCompanyDeskAlarm);
 		}
 
@@ -157,7 +155,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = db.NfcCompanyDeskAlarm.Find(id);
+			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = _nfcCompanyDeskAlarmBol.Get(id);
 			if (nfcCompanyDeskAlarm == null)
 			{
 				return HttpNotFound();
@@ -182,8 +180,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.NfcCompanyDeskAlarm.Add(nfcCompanyDeskAlarm);
-				db.SaveChanges();
+				_nfcCompanyDeskAlarmBol.Add(nfcCompanyDeskAlarm);
 				return RedirectToAction("NfcCompanyDeskAlarmIndex");
 			}
 
@@ -199,7 +196,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = db.NfcCompanyDeskAlarm.Find(id);
+			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = _nfcCompanyDeskAlarmBol.Get(id);
 			if (nfcCompanyDeskAlarm == null)
 			{
 				return HttpNotFound();
@@ -218,8 +215,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.Entry(nfcCompanyDeskAlarm).State = EntityState.Modified;
-				db.SaveChanges();
+				_nfcCompanyDeskAlarmBol.Update(nfcCompanyDeskAlarm);
 				return RedirectToAction("NfcCompanyDeskAlarmIndex");
 			}
 			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcCompanyDeskAlarm.CompanyId);
@@ -234,7 +230,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = db.NfcCompanyDeskAlarm.Find(id);
+			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = _nfcCompanyDeskAlarmBol.Get(id);
 			if (nfcCompanyDeskAlarm == null)
 			{
 				return HttpNotFound();
@@ -247,9 +243,8 @@ namespace Project.MvcWebUI.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult NfcCompanyDeskAlarmDeleteConfirmed(int id)
 		{
-			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = db.NfcCompanyDeskAlarm.Find(id);
-			db.NfcCompanyDeskAlarm.Remove(nfcCompanyDeskAlarm);
-			db.SaveChanges();
+			NfcCompanyDeskAlarm nfcCompanyDeskAlarm = _nfcCompanyDeskAlarmBol.Get(id);
+			_nfcCompanyDeskAlarmBol.Delete(nfcCompanyDeskAlarm);
 			return RedirectToAction("NfcCompanyDeskAlarmIndex");
 		}
 		#endregion MASA ALARMI (NFCCOMPANYDESKALARM) İŞLEMLERİ
@@ -258,8 +253,8 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcDeskCategory
 		public ActionResult NfcDeskCategoryIndex()
 		{
-			var nfcDeskCategory = db.NfcDeskCategory.Include(n => n.NfcCompany);
-			return View(nfcDeskCategory.ToListAsync());
+			var nfcDeskCategory = _nfcDeskCategoryBol.GetAll();
+			return View(nfcDeskCategory);
 		}
 
 		// GET: NfcDeskCategory/Details/5
@@ -269,7 +264,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcDeskCategory nfcDeskCategory = db.NfcDeskCategory.Find(id);
+			NfcDeskCategory nfcDeskCategory = _nfcDeskCategoryBol.Get(id);
 			if (nfcDeskCategory == null)
 			{
 				return HttpNotFound();
@@ -293,8 +288,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.NfcDeskCategory.Add(nfcDeskCategory);
-				db.SaveChanges();
+				_nfcDeskCategoryBol.Add(nfcDeskCategory);
 				return RedirectToAction("NfcDeskCategoryIndex");
 			}
 
@@ -309,7 +303,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcDeskCategory nfcDeskCategory = db.NfcDeskCategory.Find(id);
+			NfcDeskCategory nfcDeskCategory = _nfcDeskCategoryBol.Get(id);
 			if (nfcDeskCategory == null)
 			{
 				return HttpNotFound();
@@ -327,8 +321,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.Entry(nfcDeskCategory).State = EntityState.Modified;
-				db.SaveChanges();
+				_nfcDeskCategoryBol.Update(nfcDeskCategory);
 				return RedirectToAction("NfcDeskCategoryIndex");
 			}
 			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcDeskCategory.CompanyId);
@@ -342,7 +335,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcDeskCategory nfcDeskCategory = db.NfcDeskCategory.Find(id);
+			NfcDeskCategory nfcDeskCategory = _nfcDeskCategoryBol.Get(id);
 			if (nfcDeskCategory == null)
 			{
 				return HttpNotFound();
@@ -355,9 +348,8 @@ namespace Project.MvcWebUI.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult NfcDeskCategoryDeleteConfirmed(int id)
 		{
-			NfcDeskCategory nfcDeskCategory = db.NfcDeskCategory.Find(id);
-			db.NfcDeskCategory.Remove(nfcDeskCategory);
-			db.SaveChanges();
+			NfcDeskCategory nfcDeskCategory = _nfcDeskCategoryBol.Get(id);
+			_nfcDeskCategoryBol.Delete(nfcDeskCategory);
 			return RedirectToAction("NfcDeskCategoryIndex");
 		}
 		#endregion MASA KATEGORİ(NFCDESKCATEGORY) İŞLEMLERİ
@@ -366,7 +358,7 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcDesk
 		public ActionResult NfcDeskIndex()
 		{
-			var nfcDesk = db.NfcDesk.Include(n => n.NfcCompany).Include(n => n.NfcDeskCategory);
+			var nfcDesk = _nfcDeskBol.GetAll();
 			return View(nfcDesk);
 		}
 
@@ -377,7 +369,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcDesk nfcDesk = db.NfcDesk.Find(id);
+			NfcDesk nfcDesk = _nfcDeskBol.Get(id);
 			if (nfcDesk == null)
 			{
 				return HttpNotFound();
@@ -402,8 +394,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.NfcDesk.Add(nfcDesk);
-				db.SaveChanges();
+				_nfcDeskBol.Add(nfcDesk);
 				return RedirectToAction("NfcDeskIndex");
 			}
 
@@ -419,7 +410,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcDesk nfcDesk = db.NfcDesk.Find(id);
+			NfcDesk nfcDesk = _nfcDeskBol.Get(id);
 			if (nfcDesk == null)
 			{
 				return HttpNotFound();
@@ -438,8 +429,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.Entry(nfcDesk).State = EntityState.Modified;
-				db.SaveChanges();
+				_nfcDeskBol.Update(nfcDesk);
 				return RedirectToAction("NfcDeskIndex");
 			}
 			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcDesk.CompanyId);
@@ -454,7 +444,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcDesk nfcDesk = db.NfcDesk.Find(id);
+			NfcDesk nfcDesk = _nfcDeskBol.Get(id);
 			if (nfcDesk == null)
 			{
 				return HttpNotFound();
@@ -467,9 +457,8 @@ namespace Project.MvcWebUI.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult DeleteConfirmed(int id)
 		{
-			NfcDesk nfcDesk = db.NfcDesk.Find(id);
-			db.NfcDesk.Remove(nfcDesk);
-			db.SaveChanges();
+			NfcDesk nfcDesk = _nfcDeskBol.Get(id);
+			_nfcDeskBol.Delete(nfcDesk);
 			return RedirectToAction("NfcDeskIndex");
 		}
 		#endregion MASA (NFCDESK) İŞLEMLERİ
@@ -478,7 +467,7 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcMenu
 		public ActionResult NfcMenuIndex()
 		{
-			var nfcMenu = db.NfcMenu.Include(n => n.NfcCompany);
+			var nfcMenu = _nfcMenuBol.GetAll();
 			return View(nfcMenu);
 		}
 
@@ -489,7 +478,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcMenu nfcMenu = db.NfcMenu.Find(id);
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
 			if (nfcMenu == null)
 			{
 				return HttpNotFound();
@@ -513,8 +502,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.NfcMenu.Add(nfcMenu);
-				db.SaveChanges();
+				_nfcMenuBol.Add(nfcMenu);
 				return RedirectToAction("NfcMenuIndex");
 			}
 
@@ -529,7 +517,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcMenu nfcMenu = db.NfcMenu.Find(id);
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
 			if (nfcMenu == null)
 			{
 				return HttpNotFound();
@@ -547,8 +535,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.Entry(nfcMenu).State = EntityState.Modified;
-				db.SaveChanges();
+				_nfcMenuBol.Update(nfcMenu);
 				return RedirectToAction("NfcMenuIndex");
 			}
 			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcMenu.CompanyId);
@@ -562,7 +549,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcMenu nfcMenu = db.NfcMenu.Find(id);
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
 			if (nfcMenu == null)
 			{
 				return HttpNotFound();
@@ -575,9 +562,8 @@ namespace Project.MvcWebUI.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult NfcMenuDeleteConfirmed(int id)
 		{
-			NfcMenu nfcMenu = db.NfcMenu.Find(id);
-			db.NfcMenu.Remove(nfcMenu);
-			db.SaveChanges();
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
+			_nfcMenuBol.Delete(nfcMenu);
 			return RedirectToAction("NfcMenuIndex");
 		}
 		#endregion MENU (NFCMENU) İŞLEMLERİ
@@ -586,7 +572,7 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcTag
 		public ActionResult NfcTagIndex()
 		{
-			var nfcTag = db.NfcTag.Include(n => n.NfcCompany).Include(n => n.NfcDesk);
+			var nfcTag = _nfcTagBol.GetAll();
 			return View(nfcTag);
 		}
 
@@ -597,7 +583,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcTag nfcTag = db.NfcTag.Find(id);
+			NfcTag nfcTag = _nfcTagBol.Get(id);
 			if (nfcTag == null)
 			{
 				return HttpNotFound();
@@ -622,8 +608,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.NfcTag.Add(nfcTag);
-				db.SaveChanges();
+				_nfcTagBol.Add(nfcTag);
 				return RedirectToAction("NfcTagIndex");
 			}
 
@@ -639,7 +624,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcTag nfcTag = db.NfcTag.Find(id);
+			NfcTag nfcTag = _nfcTagBol.Get(id);
 			if (nfcTag == null)
 			{
 				return HttpNotFound();
@@ -658,8 +643,7 @@ namespace Project.MvcWebUI.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				db.Entry(nfcTag).State = EntityState.Modified;
-				db.SaveChanges();
+				_nfcTagBol.Update(nfcTag);
 				return RedirectToAction("NfcTagIndex");
 			}
 			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcTag.CompanyId);
@@ -674,7 +658,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcTag nfcTag = db.NfcTag.Find(id);
+			NfcTag nfcTag = _nfcTagBol.Get(id);
 			if (nfcTag == null)
 			{
 				return HttpNotFound();
@@ -687,9 +671,8 @@ namespace Project.MvcWebUI.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult NfcTagDeleteConfirmed(int id)
 		{
-			NfcTag nfcTag = db.NfcTag.Find(id);
-			db.NfcTag.Remove(nfcTag);
-			db.SaveChanges();
+			NfcTag nfcTag = _nfcTagBol.Get(id);
+			_nfcTagBol.Delete(nfcTag);
 			return RedirectToAction("NfcTagIndex");
 		}
 		#endregion ETİKET (NFCTAG) İŞLEMLERİ

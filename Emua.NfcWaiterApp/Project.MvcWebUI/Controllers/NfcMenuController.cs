@@ -8,28 +8,34 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Project.Entities.Concrete;
+using Project.Business.Abstract;
 
 namespace Project.MvcWebUI.Controllers
 {
 	public class NfcMenuController : Controller
 	{
 		private dbEmuaNfcContext db = new dbEmuaNfcContext();
+		private INfcMenuBOL _nfcMenuBol;
 
-		// GET: NfcMenu
-		public async Task<ActionResult> Index()
+		public NfcMenuController(INfcMenuBOL nfcMenuBol)
 		{
-			var nfcMenu = db.NfcMenu.Include(n => n.NfcCompany);
-			return View(await nfcMenu.ToListAsync());
+			_nfcMenuBol = nfcMenuBol;
+		}
+		// GET: NfcMenu
+		public ActionResult Index()
+		{
+			var nfcMenu = _nfcMenuBol.GetAll();
+			return View(nfcMenu);
 		}
 
 		// GET: NfcMenu/Details/5
-		public async Task<ActionResult> Details(int? id)
+		public ActionResult Details(int? id)
 		{
 			if (id == null)
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcMenu nfcMenu = await db.NfcMenu.FindAsync(id);
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
 			if (nfcMenu == null)
 			{
 				return HttpNotFound();
@@ -49,12 +55,11 @@ namespace Project.MvcWebUI.Controllers
 		// more details see https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<ActionResult> Create([Bind(Include = "Id,Name,ImageUrl,Url,Title,OrderNumber,Status,CreatedDate,IsAdmin,CompanyId")] NfcMenu nfcMenu)
+		public ActionResult Create([Bind(Include = "Id,Name,ImageUrl,Url,Title,OrderNumber,Status,CreatedDate,IsAdmin,CompanyId")] NfcMenu nfcMenu)
 		{
 			if (ModelState.IsValid)
 			{
-				db.NfcMenu.Add(nfcMenu);
-				await db.SaveChangesAsync();
+				_nfcMenuBol.Add(nfcMenu);
 				return RedirectToAction("Index");
 			}
 
@@ -63,13 +68,13 @@ namespace Project.MvcWebUI.Controllers
 		}
 
 		// GET: NfcMenu/Edit/5
-		public async Task<ActionResult> Edit(int? id)
+		public ActionResult Edit(int? id)
 		{
 			if (id == null)
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcMenu nfcMenu = await db.NfcMenu.FindAsync(id);
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
 			if (nfcMenu == null)
 			{
 				return HttpNotFound();
@@ -83,12 +88,11 @@ namespace Project.MvcWebUI.Controllers
 		// more details see https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<ActionResult> Edit([Bind(Include = "Id,Name,ImageUrl,Url,Title,OrderNumber,Status,CreatedDate,IsAdmin,CompanyId")] NfcMenu nfcMenu)
+		public ActionResult Edit([Bind(Include = "Id,Name,ImageUrl,Url,Title,OrderNumber,Status,CreatedDate,IsAdmin,CompanyId")] NfcMenu nfcMenu)
 		{
 			if (ModelState.IsValid)
 			{
-				db.Entry(nfcMenu).State = EntityState.Modified;
-				await db.SaveChangesAsync();
+				_nfcMenuBol.Update(nfcMenu);
 				return RedirectToAction("Index");
 			}
 			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcMenu.CompanyId);
@@ -96,13 +100,13 @@ namespace Project.MvcWebUI.Controllers
 		}
 
 		// GET: NfcMenu/Delete/5
-		public async Task<ActionResult> Delete(int? id)
+		public ActionResult Delete(int? id)
 		{
 			if (id == null)
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcMenu nfcMenu = await db.NfcMenu.FindAsync(id);
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
 			if (nfcMenu == null)
 			{
 				return HttpNotFound();
@@ -113,11 +117,10 @@ namespace Project.MvcWebUI.Controllers
 		// POST: NfcMenu/Delete/5
 		[HttpPost, ActionName("Delete")]
 		[ValidateAntiForgeryToken]
-		public async Task<ActionResult> DeleteConfirmed(int id)
+		public ActionResult DeleteConfirmed(int id)
 		{
-			NfcMenu nfcMenu = await db.NfcMenu.FindAsync(id);
-			db.NfcMenu.Remove(nfcMenu);
-			await db.SaveChangesAsync();
+			NfcMenu nfcMenu = _nfcMenuBol.Get(id);
+			_nfcMenuBol.Delete(nfcMenu);
 			return RedirectToAction("Index");
 		}
 
