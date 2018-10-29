@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
+﻿using Project.Business.Abstract;
 using Project.Entities.Concrete;
-using Project.Business.Abstract;
+using System.Net;
+using System.Web.Mvc;
 
 namespace Project.MvcWebUI.Controllers
 {
-    public class NfcCompanyDeskAlarmsController : Controller
+	public class NfcCompanyDeskAlarmsController : Controller
     {
-        private dbEmuaNfcContext db = new dbEmuaNfcContext();
 		private INfcCompanyDeskAlarmBOL _nfcCompanyDeskAlarmBol;
+		private INfcDeskBOL _nfcDeskBol;
+		private INfcCompanyBOL _nfcCompanyBol;
 
-		public NfcCompanyDeskAlarmsController(INfcCompanyDeskAlarmBOL nfcCompanyDeskAlarmBol)
+		public NfcCompanyDeskAlarmsController(INfcCompanyDeskAlarmBOL nfcCompanyDeskAlarmBol, INfcDeskBOL nfcDeskBol, INfcCompanyBOL nfcCompanyBol)
 		{
 			_nfcCompanyDeskAlarmBol = nfcCompanyDeskAlarmBol;
+			_nfcCompanyBol = nfcCompanyBol;
+			_nfcDeskBol = nfcDeskBol;
 		}
 
 		public ActionResult Index()
@@ -46,8 +42,8 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcCompanyDeskAlarms/Create
 		public ActionResult Create()
 		{
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name");
-			ViewBag.DeskId = new SelectList(db.NfcDesk, "Id", "Name");
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name");
+			ViewBag.DeskId = new SelectList(_nfcDeskBol.GetAll(), "Id", "Name");
 			return View();
 		}
 
@@ -64,8 +60,8 @@ namespace Project.MvcWebUI.Controllers
 				return RedirectToAction("Index");
 			}
 
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcCompanyDeskAlarm.CompanyId);
-			ViewBag.DeskId = new SelectList(db.NfcDesk, "Id", "Name", nfcCompanyDeskAlarm.DeskId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcCompanyDeskAlarm.CompanyId);
+			ViewBag.DeskId = new SelectList(_nfcDeskBol.GetAll(), "Id", "Name", nfcCompanyDeskAlarm.DeskId);
 			return View(nfcCompanyDeskAlarm);
 		}
 
@@ -81,8 +77,8 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return HttpNotFound();
 			}
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcCompanyDeskAlarm.CompanyId);
-			ViewBag.DeskId = new SelectList(db.NfcDesk, "Id", "Name", nfcCompanyDeskAlarm.DeskId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcCompanyDeskAlarm.CompanyId);
+			ViewBag.DeskId = new SelectList(_nfcDeskBol.GetAll(), "Id", "Name", nfcCompanyDeskAlarm.DeskId);
 			return View(nfcCompanyDeskAlarm);
 		}
 
@@ -98,8 +94,8 @@ namespace Project.MvcWebUI.Controllers
 				_nfcCompanyDeskAlarmBol.Update(nfcCompanyDeskAlarm);
 				return RedirectToAction("Index");
 			}
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcCompanyDeskAlarm.CompanyId);
-			ViewBag.DeskId = new SelectList(db.NfcDesk, "Id", "Name", nfcCompanyDeskAlarm.DeskId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcCompanyDeskAlarm.CompanyId);
+			ViewBag.DeskId = new SelectList(_nfcDeskBol.GetAll(), "Id", "Name", nfcCompanyDeskAlarm.DeskId);
 			return View(nfcCompanyDeskAlarm);
 		}
 
@@ -128,13 +124,13 @@ namespace Project.MvcWebUI.Controllers
 			return RedirectToAction("Index");
 		}
 
-		protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+		//protected override void Dispose(bool disposing)
+  //      {
+  //          if (disposing)
+  //          {
+  //              db.Dispose();
+  //          }
+  //          base.Dispose(disposing);
+  //      }
     }
 }

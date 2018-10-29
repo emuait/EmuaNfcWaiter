@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
+﻿using Project.Business.Abstract;
 using Project.Entities.Concrete;
-using Project.Business.Abstract;
+using System.Net;
+using System.Web.Mvc;
 
 namespace Project.MvcWebUI.Controllers
 {
-    public class NfcDeskCategoryController : Controller
+	public class NfcDeskCategoryController : Controller
     {
-        private dbEmuaNfcContext db = new dbEmuaNfcContext();
+		private INfcDeskBOL _nfcDeskBol;
+		private INfcCompanyBOL _nfcCompanyBol;
 		private INfcDeskCategoryBOL _nfcDeskCategoryBol;
 
-		public NfcDeskCategoryController(INfcDeskCategoryBOL nfcDeskCategoryBol)
+		public NfcDeskCategoryController(INfcDeskCategoryBOL nfcDeskCategoryBol, INfcDeskBOL nfcDeskBol, INfcCompanyBOL nfcCompanyBol)
 		{
 			_nfcDeskCategoryBol = nfcDeskCategoryBol;
+			_nfcCompanyBol = nfcCompanyBol;
+			_nfcDeskBol = nfcDeskBol;
 		}
 
 		// GET: NfcDeskCategory
@@ -47,7 +43,7 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcDeskCategory/Create
 		public ActionResult Create()
 		{
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name");
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name");
 			return View();
 		}
 
@@ -64,7 +60,7 @@ namespace Project.MvcWebUI.Controllers
 				return RedirectToAction("Index");
 			}
 
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcDeskCategory.CompanyId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcDeskCategory.CompanyId);
 			return View(nfcDeskCategory);
 		}
 
@@ -80,7 +76,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return HttpNotFound();
 			}
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcDeskCategory.CompanyId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcDeskCategory.CompanyId);
 			return View(nfcDeskCategory);
 		}
 
@@ -96,7 +92,7 @@ namespace Project.MvcWebUI.Controllers
 				_nfcDeskCategoryBol.Update(nfcDeskCategory);
 				return RedirectToAction("Index");
 			}
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcDeskCategory.CompanyId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcDeskCategory.CompanyId);
 			return View(nfcDeskCategory);
 		}
 
@@ -125,13 +121,13 @@ namespace Project.MvcWebUI.Controllers
 			return RedirectToAction("Index");
 		}
 
-		protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+		//protected override void Dispose(bool disposing)
+  //      {
+  //          if (disposing)
+  //          {
+  //              db.Dispose();
+  //          }
+  //          base.Dispose(disposing);
+  //      }
     }
 }

@@ -1,21 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
+﻿using Project.Business.Abstract;
 using Project.Entities.Concrete;
-using Project.Business.Abstract;
+using System.Net;
+using System.Web.Mvc;
 
 namespace Project.MvcWebUI.Controllers
 {
-    public class NfcCompanyController : Controller
+	public class NfcCompanyController : Controller
 	{
-		private dbEmuaNfcContext db = new dbEmuaNfcContext();
-
 		private INfcCompanyBOL _nfcCompanyBol;
 
 		public NfcCompanyController(INfcCompanyBOL nfcCompanyBol)
@@ -120,13 +111,13 @@ namespace Project.MvcWebUI.Controllers
 			return RedirectToAction("Index");
 		}
 
-		protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+		//protected override void Dispose(bool disposing)
+  //      {
+  //          if (disposing)
+  //          {
+  //              db.Dispose();
+  //          }
+  //          base.Dispose(disposing);
+  //      }
     }
 }

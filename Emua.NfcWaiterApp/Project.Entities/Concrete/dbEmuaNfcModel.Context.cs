@@ -9,27 +9,29 @@
 
 namespace Project.Entities.Concrete
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Infrastructure;
-    
-    public partial class dbEmuaNfcContext : DbContext
-    {
-        public dbEmuaNfcContext()
-            : base("name=dbEmuaNfcContext")
-        {
-        }
-    
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-        }
-    
-        public virtual DbSet<NfcCompany> NfcCompany { get; set; }
-        public virtual DbSet<NfcCompanyDeskAlarm> NfcCompanyDeskAlarm { get; set; }
-        public virtual DbSet<NfcDesk> NfcDesk { get; set; }
-        public virtual DbSet<NfcDeskCategory> NfcDeskCategory { get; set; }
-        public virtual DbSet<NfcMenu> NfcMenu { get; set; }
-        public virtual DbSet<NfcTag> NfcTag { get; set; }
-    }
+	using System;
+	using System.Data.Entity;
+	using System.Data.Entity.Infrastructure;
+
+	public partial class dbEmuaNfcContext : DbContext
+	{
+		public dbEmuaNfcContext() : base("name=dbEmuaNfcContext")
+		{
+			Configuration.LazyLoadingEnabled = false;
+			Configuration.ProxyCreationEnabled = true;
+			Configuration.AutoDetectChangesEnabled = true;
+		}
+
+		protected override void OnModelCreating(DbModelBuilder modelBuilder)
+		{
+			base.OnModelCreating(modelBuilder);
+		}
+
+		public virtual DbSet<NfcCompany> NfcCompany { get; set; }
+		public virtual DbSet<NfcCompanyDeskAlarm> NfcCompanyDeskAlarm { get; set; }
+		public virtual DbSet<NfcDesk> NfcDesk { get; set; }
+		public virtual DbSet<NfcDeskCategory> NfcDeskCategory { get; set; }
+		public virtual DbSet<NfcMenu> NfcMenu { get; set; }
+		public virtual DbSet<NfcTag> NfcTag { get; set; }
+	}
 }

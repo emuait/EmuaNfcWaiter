@@ -14,17 +14,12 @@ namespace Project.Business.Concrete
 		}
 		public NfcDesk Add(NfcDesk entity)
 		{
-			throw new System.NotImplementedException();
+			return _nfcDeskDal.Add(entity);
 		}
 
 		public void Delete(NfcDesk entity)
 		{
-			throw new System.NotImplementedException();
-		}
-
-		public NfcDesk Get(int? id)
-		{
-			throw new System.NotImplementedException();
+			_nfcDeskDal.Delete(entity);
 		}
 
 		public List<NfcDesk> GetAll()
@@ -32,9 +27,34 @@ namespace Project.Business.Concrete
 			return _nfcDeskDal.GetList();
 		}
 
+		public NfcDesk Get(int? id)
+		{
+			return _nfcDeskDal.Get(a => a.Id == id);
+		}
+
+		public List<NfcDesk> GetAll(int? companyId)
+		{
+			return _nfcDeskDal.GetList(a => a.CompanyId == companyId);
+		}
+
+		public List<NfcDesk> GetAll(int? companyId, int? deskCategoryId)
+		{
+			return _nfcDeskDal.GetList(a => a.CompanyId == companyId && a.DeskCategoryId == deskCategoryId);
+		}
+
 		public NfcDesk Update(NfcDesk entity)
 		{
-			throw new System.NotImplementedException();
+			return _nfcDeskDal.Update(entity);
+		}
+
+		public List<NfcDesk> GetAllInclude(string[] includes)
+		{
+			return _nfcDeskDal.GetListInclude(null, includes);
+		}
+
+		public NfcDesk GetInclude(int? id, string[] includes)
+		{
+			return _nfcDeskDal.GetInclude(a => a.Id == id, includes);
 		}
 	}
 }

@@ -8,6 +8,11 @@
 
 - o - o - o - o - o - o - o -	
 1) tüm masaların gösterimi için; şirket id'ye bağlı masa listesi,(şirket id ve kategori id input)
+		public List<NfcDesk> GetAll(int? companyId)
+		public List<NfcDesk> GetAll(int? companyId, int? deskCategoryId)
+	
+    olmak üzere Busines classına metotlar eklendi.
+		
 2) a- masa istek (etiket url) formatı belirlenecek. Alarm tetikleme buna göre yapılacak.(AlarmTypeName, şirket id ve masa numarası input değeridir.)
    b- istek geldiği an alarm oluşturma işlemi:
 	  * eğer ilgili alarm isteği, 

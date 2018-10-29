@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
+﻿using Project.Business.Abstract;
 using Project.Entities.Concrete;
-using Project.Business.Abstract;
+using System.Net;
+using System.Web.Mvc;
 
 namespace Project.MvcWebUI.Controllers
 {
 	public class NfcMenuController : Controller
 	{
-		private dbEmuaNfcContext db = new dbEmuaNfcContext();
 		private INfcMenuBOL _nfcMenuBol;
+		private INfcCompanyBOL _nfcCompanyBol;
 
-		public NfcMenuController(INfcMenuBOL nfcMenuBol)
+		public NfcMenuController(INfcMenuBOL nfcMenuBol, INfcCompanyBOL nfcCompanyBol)
 		{
 			_nfcMenuBol = nfcMenuBol;
+			_nfcCompanyBol = nfcCompanyBol;
 		}
 		// GET: NfcMenu
 		public ActionResult Index()
@@ -46,7 +40,7 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcMenu/Create
 		public ActionResult Create()
 		{
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name");
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name");
 			return View();
 		}
 
@@ -63,7 +57,7 @@ namespace Project.MvcWebUI.Controllers
 				return RedirectToAction("Index");
 			}
 
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcMenu.CompanyId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcMenu.CompanyId);
 			return View(nfcMenu);
 		}
 
@@ -79,7 +73,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return HttpNotFound();
 			}
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcMenu.CompanyId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcMenu.CompanyId);
 			return View(nfcMenu);
 		}
 
@@ -95,7 +89,7 @@ namespace Project.MvcWebUI.Controllers
 				_nfcMenuBol.Update(nfcMenu);
 				return RedirectToAction("Index");
 			}
-			ViewBag.CompanyId = new SelectList(db.NfcCompany, "Id", "Name", nfcMenu.CompanyId);
+			ViewBag.CompanyId = new SelectList(_nfcCompanyBol.GetAll(), "Id", "Name", nfcMenu.CompanyId);
 			return View(nfcMenu);
 		}
 
@@ -124,13 +118,13 @@ namespace Project.MvcWebUI.Controllers
 			return RedirectToAction("Index");
 		}
 
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing)
-			{
-				db.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+		//protected override void Dispose(bool disposing)
+		//{
+		//	if (disposing)
+		//	{
+		//		db.Dispose();
+		//	}
+		//	base.Dispose(disposing);
+		//}
 	}
 }
