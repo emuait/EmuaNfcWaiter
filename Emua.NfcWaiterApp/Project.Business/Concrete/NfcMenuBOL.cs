@@ -7,29 +7,45 @@ namespace Project.Business.Concrete
 {
 	public class NfcMenuBOL : INfcMenuBOL
 	{
+		private string[] includes = new string[] { "NfcCompany" };
+		private INfcMenuDAL _nfcMenuDal;
+		public NfcMenuBOL(INfcMenuDAL nfcMenuDal)
+		{
+			_nfcMenuDal = nfcMenuDal;
+		}
 		public NfcMenu Add(NfcMenu entity)
 		{
-			throw new System.NotImplementedException();
+			return _nfcMenuDal.Add(entity);
 		}
 
 		public void Delete(NfcMenu entity)
 		{
-			throw new System.NotImplementedException();
+			_nfcMenuDal.Delete(entity);
 		}
 
 		public NfcMenu Get(int? id)
 		{
-			throw new System.NotImplementedException();
+			return _nfcMenuDal.Get(a => a.Id == id);
 		}
 
-		public List<NfcMenu> GetAll()
+		public NfcMenu GetInclude(int? id)
 		{
-			throw new System.NotImplementedException();
+			return _nfcMenuDal.GetInclude(a => a.Id == id, includes);
+		}
+
+		public List<NfcMenu> GetAll(int? companyId)
+		{
+			return _nfcMenuDal.GetList(a => a.CompanyId == companyId);
+		}
+
+		public List<NfcMenu> GetAllInclude(int? companyId)
+		{
+			return _nfcMenuDal.GetListInclude(a => a.CompanyId == companyId, includes);
 		}
 
 		public NfcMenu Update(NfcMenu entity)
 		{
-			throw new System.NotImplementedException();
+			return _nfcMenuDal.Update(entity);
 		}
 	}
 }

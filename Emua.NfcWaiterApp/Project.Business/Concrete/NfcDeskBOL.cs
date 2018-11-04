@@ -7,6 +7,7 @@ namespace Project.Business.Concrete
 {
 	public class NfcDeskBOL : INfcDeskBOL
 	{
+		private string[] includes = new string[] { "NfcCompany", "NfcDeskCategory" };
 		private INfcDeskDAL _nfcDeskDal;
 		public NfcDeskBOL(INfcDeskDAL nfcDeskDal)
 		{
@@ -32,6 +33,11 @@ namespace Project.Business.Concrete
 			return _nfcDeskDal.Get(a => a.Id == id);
 		}
 
+		public NfcDesk GetInclude(int? id)
+		{
+			return _nfcDeskDal.GetInclude(a => a.Id == id, includes);
+		}
+
 		public List<NfcDesk> GetAll(int? companyId)
 		{
 			return _nfcDeskDal.GetList(a => a.CompanyId == companyId);
@@ -42,19 +48,24 @@ namespace Project.Business.Concrete
 			return _nfcDeskDal.GetList(a => a.CompanyId == companyId && a.DeskCategoryId == deskCategoryId);
 		}
 
-		public NfcDesk Update(NfcDesk entity)
-		{
-			return _nfcDeskDal.Update(entity);
-		}
-
-		public List<NfcDesk> GetAllInclude(string[] includes)
+		public List<NfcDesk> GetAllInclude()
 		{
 			return _nfcDeskDal.GetListInclude(null, includes);
 		}
 
-		public NfcDesk GetInclude(int? id, string[] includes)
+		public List<NfcDesk> GetAllInclude(int? companyId)
 		{
-			return _nfcDeskDal.GetInclude(a => a.Id == id, includes);
+			return _nfcDeskDal.GetListInclude(a => a.CompanyId == companyId, includes);
+		}
+
+		public List<NfcDesk> GetAllInclude(int? companyId, int? deskCategoryId)
+		{
+			return _nfcDeskDal.GetListInclude(a => a.CompanyId == companyId && a.DeskCategoryId == deskCategoryId, includes);
+		}
+
+		public NfcDesk Update(NfcDesk entity)
+		{
+			return _nfcDeskDal.Update(entity);
 		}
 	}
 }

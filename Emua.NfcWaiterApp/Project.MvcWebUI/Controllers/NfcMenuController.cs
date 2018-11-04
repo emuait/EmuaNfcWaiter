@@ -18,7 +18,9 @@ namespace Project.MvcWebUI.Controllers
 		// GET: NfcMenu
 		public ActionResult Index()
 		{
-			var nfcMenu = _nfcMenuBol.GetAll();
+			//login esnasına veya başka bir durumda şirket Id bilgisi dinamik olarak dolduruluacak.
+			int? companyId = 1;
+			var nfcMenu = _nfcMenuBol.GetAll(companyId);
 			return View(nfcMenu);
 		}
 

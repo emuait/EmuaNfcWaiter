@@ -1,5 +1,6 @@
 ﻿using Project.Business.Abstract;
 using Project.Entities.Concrete;
+using System;
 using System.Net;
 using System.Web.Mvc;
 
@@ -11,21 +12,36 @@ namespace Project.MvcWebUI.Controllers
 		private INfcDeskBOL _nfcDeskBol;
 		private INfcCompanyBOL _nfcCompanyBol;
 		private INfcDeskCategoryBOL _nfcDeskCategoryBol;
+		private INfcCompanyDeskAlarmBOL _nfcCompanyDeskAlarmBol;
 
-		public NfcDeskController(INfcDeskBOL nfcDeskBol, INfcCompanyBOL nfcCompanyBol, INfcDeskCategoryBOL nfcDeskCategoryBol)
+		public NfcDeskController(INfcDeskBOL nfcDeskBol, INfcCompanyBOL nfcCompanyBol, INfcDeskCategoryBOL nfcDeskCategoryBol, INfcCompanyDeskAlarmBOL nfcCompanyDeskAlarmBol)
 		{
 			_nfcCompanyBol = nfcCompanyBol;
 			_nfcDeskBol = nfcDeskBol;
 			_nfcDeskCategoryBol = nfcDeskCategoryBol;
+			_nfcCompanyDeskAlarmBol = nfcCompanyDeskAlarmBol;
 		}
 
 		// GET: NfcDesk
 		public ActionResult Index()
 		{
+			//login esnasına veya başka bir durumda şirket Id bilgisi dinamik olarak dolduruluacak.
 			int? companyId = 1;
-			string[] includes = new string[] { "NfcCompany", "NfcDeskCategory" };
-			var nfcDeskList = _nfcDeskBol.GetAllInclude(includes);
+			var nfcDeskList = _nfcDeskBol.GetAllInclude(companyId);
 			return View(nfcDeskList);
+		}
+
+		[HttpGet]
+		public ActionResult Index(int deskId, int companyId, string alarmTypeName)
+		{
+			//login esnasına veya başka bir durumda şirket Id bilgisi dinamik olarak dolduruluacak.
+			NfcCompanyDeskAlarm entity = new NfcCompanyDeskAlarm();
+			entity.CompanyId = companyId;
+			entity.DeskId = deskId;
+			entity.AlarmTypeName = alarmTypeName;
+			entity.CreatedDate = DateTime.Now;
+			_nfcCompanyDeskAlarmBol.Add(entity);
+			return View();
 		}
 
 		// GET: NfcDesk/Details/5
@@ -35,7 +51,7 @@ namespace Project.MvcWebUI.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			NfcDesk nfcDesk = _nfcDeskBol.Get(id);
+			NfcDesk nfcDesk = _nfcDeskBol.GetInclude(id);
 			if (nfcDesk == null)
 			{
 				return HttpNotFound();
